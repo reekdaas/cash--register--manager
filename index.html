@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" class="style" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <h1 class="heading">Cash Register Manager</h1>
+      <p class="description">
+        Enter the bill amount and cash given by the customer to know minimum
+        number of notes to return.
+      </p>
+      <label for="bill-amount">Bill Amount:</label>
+      <input id="bill-amount" type="number" placeholder="Enter Bill Amount" />
+      <button class="btn next-btn">Next</button>
+
+      <label class="cash-text" for="cash-given">Cash Given:</label>
+      <input type="number" id="cash-given" placeholder="Enter Cash Amount" />
+      <button class="btn check-btn">Check</button>
+      <p id="error-message"></p>
+      <table class="change-table">
+        <caption>
+          Return Change
+        </caption>
+        <tr>
+          <th>Notes</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>50</td>
+          <td>20</td>
+          <td>10</td>
+
+          <td>1</td>
+        </tr>
+        <tr>
+          <th>No of Notes</th>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <div class="footer-header"></div>
+
+      <ul class="social-links">
+        <li class="list-item-inline">
+          <a class="link" target="_blank" href="https://twitter.com/ReekDas111">
+            Twitter
+          </a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            target="_blank"
+            href="https://www.linkedin.com/in/rittik-das-796895180/"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" target="_blank" href="/">GitHub </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
