@@ -19,7 +19,7 @@ const showCashSection = function () {
     checkButton.style.display = "block";
     cashText.style.display = "inline";
   } else {
-    errorMessage.innerText = "Bill Amount should be greater than zero";
+    showMessage("Bill Amount should be greater than zero");
   }
 };
 nextButton.addEventListener("click", showCashSection);
@@ -27,18 +27,14 @@ nextButton.addEventListener("click", showCashSection);
 const validateBillandCashAmount = function () {
   hideMessage();
 
-  if (billAmount.value > 0) {
-    if (cashGiven.value > billAmount.value) {
-      const amountToReturn = cashGiven.value - billAmount.value;
+  if (cashGiven.value > billAmount.value) {
+    const amountToReturn = cashGiven.value - billAmount.value;
 
-      calculateChange(amountToReturn);
-    } else if (billAmount.value === cashGiven.value) {
-      showMessage("No change is available");
-    } else {
-      showMessage("Do you want to wash dish?");
-    }
+    calculateChange(amountToReturn);
+  } else if (billAmount.value === cashGiven.value) {
+    showMessage("No change is available");
   } else {
-    showMessage("The bill amount should be greater than 0");
+    showMessage("Do you want to wash dish?");
   }
 };
 
