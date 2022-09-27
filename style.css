@@ -61,6 +61,10 @@ header {
   background-color: #293462;
   color: var(--primary-color);
   border: none;
+  cursor: pointer;
+}
+.container .btn:hover {
+  background-color: var(--secondary-color);
 }
 
 .container input {
