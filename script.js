@@ -34,7 +34,7 @@ const validateBillandCashAmount = function () {
 
       calculateChange(amountToReturn);
     } else if (billAmount.value === cashGiven.value) {
-      showMessage("No change is available");
+      showMessage("No change to be returned");
     } else {
       showMessage("Do you want to wash dish?");
     }
