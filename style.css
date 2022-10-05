@@ -18,17 +18,18 @@ body {
   color: var(--primary-color);
 }
 header {
-  min-height: 10vh;
+  min-height: 8vh;
   background-color: var(--secondary-color);
   border-radius: 0 0 0.75rem 0.75rem;
 }
 
 .container {
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   display: flex;
   flex-direction: column;
   width: 40vw;
-  min-height: 80vh;
+  min-height: 70vh;
+  /* padding: 1rem 0rem; */
   color: var(--primary-color);
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
@@ -37,7 +38,7 @@ header {
 
 .container .heading {
   font-size: 2.5rem;
-  padding: 1rem 0rem;
+  padding: 1rem 0rem 0rem;
   color: var(--primary-color);
 }
 
@@ -65,7 +66,6 @@ header {
 }
 .container .btn:hover {
   background-color: var(--secondary-color);
-  
 }
 
 .container input {
@@ -84,6 +84,7 @@ table {
   height: 12vh;
   border-radius: 10px;
   border: 2px solid #533483;
+  /* padding-bottom: 0.75rem; */
 }
 
 table,
@@ -115,7 +116,7 @@ footer {
   margin-top: 1rem;
   background-color: var(--secondary-color);
   border-radius: 10px 10px 0 0;
-  min-height: 10vh;
+  min-height: 11.4vh;
 }
 .social-links {
   list-style-type: none;
