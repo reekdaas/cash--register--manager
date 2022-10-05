@@ -29,7 +29,7 @@ nextButton.addEventListener("click", showCashSection);
 const validateBillandCashAmount = function () {
   hideMessage();
   if (cashGiven.value > 0) {
-    if (cashGiven.value > billAmount.value) {
+    if (cashGiven.value - billAmount.value > 0) {
       const amountToReturn = cashGiven.value - billAmount.value;
 
       calculateChange(amountToReturn);
