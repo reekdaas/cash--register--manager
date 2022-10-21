@@ -113,10 +113,10 @@ td {
 /* footer */
 
 footer {
-  margin-top: 1rem;
+  margin-top: 3.1rem;
   background-color: var(--secondary-color);
   border-radius: 10px 10px 0 0;
-  min-height: 11.4vh;
+  height: 12vh;
 }
 .social-links {
   list-style-type: none;
